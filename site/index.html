@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>عيادة سمايل | ابتسامتك تستحق أفضل رعاية</title>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.441.0/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header class="header" id="header">
+  <div class="wrap nav">
+    <button class="burger" id="burger" aria-label="القائمة"><span></span><span></span><span></span></button>
+    <nav class="links" id="links">
+      <a href="#home" class="active">الرئيسية</a><a href="#about">من نحن</a><a href="#services">خدماتنا</a>
+      <a href="#doctors">الأطباء</a><a href="#reviews">آراء المرضى</a><a href="#contact">تواصل معنا</a>
+    </nav>
+    <a class="logo" href="#home">سمايل<b>.</b></a>
+    <a class="btn btn-dark" href="#booking">احجز موعدك</a>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <i class="blob b1"></i><i class="blob b2"></i>
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <span class="tag">عيادة سمايل لطب الأسنان</span>
+      <h1>ابتسامتك تستحق <em>أفضل رعاية</em></h1>
+      <p>نقدم لك رعاية متكاملة لأسنانك بأحدث التقنيات وعلى أيدي نخبة من الأطباء المتخصصين.</p>
+      <div class="cta"><a class="btn btn-dark" href="#booking">احجز موعدك الآن</a><a class="btn btn-ghost" href="#services">اكتشف خدماتنا</a></div>
+    </div>
+    <div class="docs-wrap" id="doctors">
+      <div class="docs">
+        <figure style="--d:.15s"><img alt="د. سارة" src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=500&q=70"></figure>
+        <figure class="mid" style="--d:.45s"><img alt="د. أحمد" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=70"></figure>
+        <figure style="--d:.75s"><img alt="د. منى" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&q=70"></figure>
+      </div>
+      <div class="docbar"><div><b>د. سارة مراد</b><small>تجميل الأسنان</small></div><div><b>د. أحمد خالد</b><small>زراعة الأسنان</small></div><div><b>د. منى عادل</b><small>تقويم الأسنان</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about"><div class="wrap center">
+  <h2>عن العيادة</h2><p class="sub">أكثر من 15 عاماً من الخبرة، وتجهيزات حديثة، وتعقيم كامل بمعايير عالمية. نؤمن أن زيارة الطبيب يجب أن تكون تجربة مريحة.</p>
+  <div class="stats"><div><b data-n="12" data-p="+" data-s="K">0</b>مريض سعيد</div><div><b data-n="15" data-p="+">0</b>سنة خبرة</div><div><b data-n="8">0</b>أطباء متخصصون</div></div>
+</div></section>
+
+<section class="sec" id="services"><div class="wrap">
+  <div class="center"><h2>خدماتنا الطبية</h2><p class="sub">رعاية متكاملة لابتسامة صحية وجميلة.</p></div>
+  <div class="cards" id="svc"></div>
+</div></section>
+
+<section class="sec soft" id="reviews"><div class="wrap">
+  <div class="head"><h2>آراء مرضانا</h2><div class="arrows"><button data-dir="1" aria-label="التالي"><i data-lucide="chevron-right"></i></button><button data-dir="-1" aria-label="السابق"><i data-lucide="chevron-left"></i></button></div></div>
+  <div class="track" id="track"></div><div class="dots" id="dots"></div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="center"><h2>نتائج حقيقية.. ابتسامات أجمل</h2><p class="sub">اسحب المقبض لمقارنة الحالة قبل وبعد العلاج (صور توضيحية).</p></div>
+  <div class="ba-grid" id="ba"></div>
+</div></section>
+
+<section class="sec soft"><div class="wrap">
+  <div class="center"><h2>أحدث التقنيات داخل عيادتنا</h2></div>
+  <div class="gallery" id="gal"></div>
+</div></section>
+
+<section class="sec book" id="booking"><div class="wrap book-in">
+  <div class="promo">
+    <div class="video"><img alt="فيديو تعريفي" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=70"><button class="play" id="playBtn" aria-label="تشغيل"><i data-lucide="play"></i></button></div>
+    <h2>احجز زيارتك القادمة بسهولة</h2><p>اختر الخدمة وسنؤكد موعدك خلال دقائق، أو احجز مباشرة من الموقع.</p>
+  </div>
+  <form class="form" id="bookForm" novalidate>
+    <label>الاسم الكامل<input name="name" required></label>
+    <label>رقم الهاتف<input name="phone" type="tel" inputmode="tel" placeholder="01XXXXXXXXX" required></label>
+    <label>الخدمة المطلوبة<select name="service" required></select></label>
+    <label>ملاحظات إضافية (اختياري)<textarea name="notes" rows="2"></textarea></label>
+    <p class="err" id="formErr" role="alert"></p>
+    <button type="button" class="btn btn-dark" id="waBtn"><i data-lucide="message-circle"></i> احجز عبر واتساب</button>
+    <button type="button" class="btn btn-outline" id="siteBtn"><i data-lucide="calendar-days"></i> احجز من الموقع</button>
+    <small class="demo">⚠ نموذج تجريبي لعرض الأعمال — لا توجد عمليات دفع حقيقية.</small>
+  </form>
+</div></section>
+
+<section class="sec"><div class="wrap narrow">
+  <div class="center"><h2>أسئلة شائعة عن خدماتنا</h2></div><div id="faq"></div>
+</div></section>
+</main>
+
+<footer class="footer" id="contact"><div class="wrap fgrid">
+  <div><a class="logo light" href="#home">سمايل<b>.</b></a><p>عيادة أسنان عصرية تجمع بين الخبرة والتقنية والراحة.</p></div>
+  <div><h4>روابط سريعة</h4><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#reviews">آراء المرضى</a><a href="#booking">احجز الآن</a></div>
+  <div><h4>خدماتنا</h4><a href="#services">زراعة الأسنان</a><a href="#services">تجميل الأسنان</a><a href="#services">تقويم الأسنان</a></div>
+  <div><h4>تواصل معنا</h4><a href="tel:+20100XXXXXXX" dir="ltr">010XXXXXXXX</a><a id="waLink" href="#" target="_blank" rel="noopener">واتساب</a><span>السبت – الخميس: 10 ص – 8 م</span></div>
+</div><p class="copy">© 2026 عيادة سمايل — مشروع تجريبي لعرض الأعمال (Frontend Demo)</p></footer>
+
+<nav class="fbar" aria-label="إجراءات سريعة">
+  <a href="#booking"><i data-lucide="calendar-check"></i><span>احجز موعدك</span></a>
+  <a href="#doctors"><i data-lucide="stethoscope"></i><span>تعرف على الأطباء</span></a>
+  <a href="#contact"><i data-lucide="phone"></i><span>تواصل معنا</span></a>
+</nav>
+
+<div class="modal" id="modal" aria-hidden="true"><div class="dlg" role="dialog" aria-modal="true">
+  <button class="x" id="closeM" aria-label="إغلاق">×</button>
+  <div class="steps" id="steps"></div><div id="body"></div>
+</div></div>
+
+<script src="js/main.js"></script><script src="js/booking.js"></script><script src="js/animations.js"></script>
+<script>lucide.createIcons()</script>
+</body></html>
